@@ -1,0 +1,41 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      Contributing | VitePress
+    </title>
+    <meta name="description" content="A VitePress site">
+    <link rel="stylesheet" href="/_assets/style.8a785236.css">
+    <link rel="modulepreload" href="/_assets/common-d338704c.js">
+    <link rel="modulepreload" href="/_assets/CONTRIBUTING.md.4097a409.lean.js">
+    <link rel="modulepreload" href="/_assets/app.a7574bb2.js">
+    
+    
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header><!--[--><a class="title" aria-label="VitePress, back to home" href="/"><!----><span>VitePress</span></a><!----><!--]--><div class="sidebar-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div></header><aside class=""><ul class="sidebar"><!--[--><!--]--></ul></aside><div class="sidebar-mask"></div><main><div class="content"><div><h1 id="contributing"><a class="header-anchor" href="#contributing" aria-hidden="true">#</a> Contributing</h1><p>This is a guide to help those who are interested in contributing to VitePress!</p><h2 id="prerequisites"><a class="header-anchor" href="#prerequisites" aria-hidden="true">#</a> Prerequisites</h2><ul><li><a href="https://classic.yarnpkg.com/en/docs/cli/install/" target="_blank" rel="noopener noreferrer">yarn</a></li></ul><h2 id="instructions"><a class="header-anchor" href="#instructions" aria-hidden="true">#</a> Instructions</h2><h3 id="setup-vitepress-dev-environment"><a class="header-anchor" href="#setup-vitepress-dev-environment" aria-hidden="true">#</a> Setup VitePress dev environment</h3><ol><li>Clone the VitePress repo</li><li>Install dependencies<div class="language-"><pre><code>yarn
+</code></pre></div></li><li>Create symlink to allow projects to link to local VitePress dev environment<div class="language-bash"><pre><code><span class="token function">yarn</span> <span class="token function">link</span>
+</code></pre></div><ul><li>If it&#39;s successful, you should see the following message:</li></ul><div class="language-"><pre><code>success Registered &quot;vitepress&quot;.
+info You can now run `yarn link &quot;vitepress&quot;` in the projects where you want to use this package and it will be used instead.
+✨  Done in 0.05s.
+</code></pre></div></li><li>Start VitePress local dev environment<div class="language-bash"><pre><code><span class="token function">yarn</span> dev
+</code></pre></div></li></ol><h3 id="setup-local-vitepress-project"><a class="header-anchor" href="#setup-local-vitepress-project" aria-hidden="true">#</a> Setup local VitePress project</h3><ol><li>Open up terminal</li><li>Create a new folder</li><li>Initialize with <code>npm init</code></li><li>Create a <code>docs</code> directory</li><li>Create an <code>index.md</code> file with some content inside of <code>/docs</code></li><li>Add dependency to local VitePress dev environment<div class="language-bash"><pre><code><span class="token function">yarn</span> <span class="token function">link</span> vitepress
+</code></pre></div></li><li>Add script to run VitePress in <code>package.json</code><ul><li>The following sample uses the command <code>dev</code> and assumes your VitePress site will live in the folder <code>docs</code></li></ul><div class="language-json"><pre><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vitepress-project&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vitepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>If successful, you should see a similar message to the following;</li></ul><div class="language-"><pre><code>$ vitepress dev docs
+vitepress v0.3.1
+vite v0.20.2
+listening at http://localhost:3000
+</code></pre></div></li></ol><p>And with that, you are now ready to contribute to the VitePress project! 🎉</p></div><div class="links-wrapper"><div class="prev-link"><!----></div><div class="next-link"><!----></div></div></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"CHANGELOG.md\":\"f510a22f\",\"CONTRIBUTING.md\":\"4097a409\",\"README.md\":\"fe77602a\"}")</script>
+    <script type="module" async src="/_assets/app.a7574bb2.js"></script>
+  </body>
+</html>
